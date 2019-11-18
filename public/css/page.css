@@ -1,0 +1,43 @@
+.jumbotron {
+	opacity: 0.8;
+	margin-top: 5vh;
+	max-width: 60vw;;
+}
+
+.main_class {
+	height: 100vh;
+	background-image: url("/public/res/background.jpg");
+	background-attachment: fixed;
+}
+
+.signup-box {
+	opacity: 0.9;
+	margin-top: 20px;
+	padding: 10px;
+	max-width: 80vh;
+	background-color: rgb(150, 166, 175); 
+}
+
+.signup-form {
+	padding-top: 20px;
+}
+
+.banner {
+	text-align: center;
+	font-size: 30px;
+	background-color:rgb(106, 161, 194);
+}
+
+.page404 {
+	height: 100vh;
+	color: brown;
+	background-image: url("/public/res/page2404_ex.jpg");
+	background-repeat: no-repeat;
+	background-size: 50% 50%;
+	background-position: center;
+	background-color: #0f1012;
+}
+.page404 h1 {
+	font-size: 80px;
+	font-weight: bolder;
+}

@@ -1,0 +1,29 @@
+examApp.config(['$stateProvider','$locationProvider','$urlRouterProvider',function($stateProvider,$locationProvider,$urlRouterProvider){
+	$urlRouterProvider.otherwise("/page404")
+	
+	$stateProvider
+    .state("main",{
+		url:"",
+		abstract:true,
+		templateUrl:"public/partials/main.html"
+	})
+	.state("main.home",{
+		url:"/",
+		templateUrl:"public/partials/home.html"
+	})
+	.state("main.register",{
+		url:"/register",
+		templateUrl:"public/partials/registration.html"
+	})
+	.state("main.login",{
+		url:"/login",
+		templateUrl:"public/partials/login.html"
+	})
+	//---
+	
+	.state("page404",{
+		url:"/page404",
+		templateUrl:"public/partials/page404.html"
+	})
+    $locationProvider.html5Mode(true);
+}]);

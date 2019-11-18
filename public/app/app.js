@@ -1,0 +1,1 @@
+var examApp = angular.module('examApp',['ui.router']);
