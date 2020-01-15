@@ -1,1 +1,1 @@
-var examApp = angular.module('examApp',['ui.router']);
+var examApp = angular.module('examApp',['ui.router','angular-storage']);

@@ -7,7 +7,8 @@ var registrationSchema = new schema({
     fullname: { type: String },
     password: { type: String },
     token: { type: String },
-	created_at: { type: Date, default: Date.now }
+    access: { type: String, default:"student"},
+    created_at: { type: Date, default: Date.now }
 });
 
 exports.registrationModel = mongoose.model('registrationModel', registrationSchema);
