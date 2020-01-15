@@ -31,6 +31,7 @@ examApp.controller('adminDashboardController', ['$scope', 'store', '$state', 'Se
     $scope.logout = function(){
         store.remove('admin');
         $state.go('main.login');
+        return;
     }
     if(currentUser) userId = currentUser.access_token;
     else{
@@ -47,8 +48,9 @@ examApp.controller('userDashboardController', ['$scope', 'store', '$state', 'Ser
     var currentUser = userAuth.getCurrentUser()
     var userId = null;
     $scope.logout = function(){
-        //store.remove('student');
+        store.remove('student');
         $state.go('main.login');
+        return;
     }
     if(currentUser) userId = currentUser.access_token;
     else{

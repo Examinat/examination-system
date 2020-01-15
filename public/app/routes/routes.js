@@ -85,7 +85,7 @@ function studentAfterLogin($q, userAuth, $state, Service, store){
                     userAuth.setCurrentUser(response[0]._id, "admin");
                     $state.go('adminDashboard');
                 }
-                else {
+                if(response[0].access=="student") {
                     userAuth.setCurrentUser(response[0]._id, "student");
                     $state.go('userDashboard');
                 }
